@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Reiter Module → beim Modul auf Massenscan → Hinweis lesen → Scannen starten → alle Packungen scannen → Massenscan abschließen → Vorschau prüfen → Abschließen.">
+<title>4.2 Massenscan durchführen – Milan Helpdesk</title>
+<link rel="icon" type="image/png" href="../assets/img/favicon.png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../">
+<div class="top-bar">
+  <div class="brand">
+    <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="sidebar"><span></span><span></span><span></span></button>
+    <a class="logo" href="../index.html" aria-label="Zur Startseite des Milan Helpdesk"><img class="brand-mark" src="../assets/img/milan-logo.png" alt="Milan Materialmanagement"></a>
+    <div><div class="brand-text">Milan Helpdesk</div><span class="brand-sub">Anleitungen für Helferinnen und Helfer · Milan Materialmanagement</span></div>
+  </div>
+</div>
+<div class="overlay" id="overlay"></div>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="Seitennavigation">
+<div class="sidebar-search"><input id="navSearch" type="search" placeholder="Suchen, z. B. „Passwort“ oder „auffüllen“" aria-label="Anleitungen durchsuchen" autocomplete="off"></div>
+<ul class="search-results" id="searchResults" hidden></ul>
+<div id="navList"><div class="sidebar-title">Inhalt</div><ul class="nav-list">
+<li class="nav-section"><a href="../index.html">Startseite</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-1.html">1. Erste Schritte</a></li>
+<li><a class="sub" href="../anleitungen/anmelden.html">1.1 Anmelden und Abmelden</a></li>
+<li><a class="sub" href="../anleitungen/passwort-aendern.html">1.2 Passwort ändern</a></li>
+<li><a class="sub" href="../anleitungen/app-ueberblick.html">1.3 Die App im Überblick</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-2.html">2. Verbrauch dokumentieren</a></li>
+<li><a class="sub" href="../anleitungen/verbrauch-ueberblick.html">2.1 Verbrauch dokumentieren: der Überblick</a></li>
+<li><a class="sub" href="../anleitungen/veranstaltung-waehlen.html">2.2 Veranstaltung wählen</a></li>
+<li><a class="sub" href="../anleitungen/austragen.html">2.3 Material austragen</a></li>
+<li><a class="sub" href="../anleitungen/austragen-korrigieren.html">2.4 Eintrag korrigieren oder entfernen</a></li>
+<li><a class="sub" href="../anleitungen/auffuellen.html">2.5 Material auffüllen</a></li>
+<li><a class="sub" href="../anleitungen/verbrauch-bericht.html">2.6 Bericht ansehen und Sitzung beenden</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-3.html">3. Einsatzmittel kontrollieren</a></li>
+<li><a class="sub" href="../anleitungen/ep-finden.html">3.1 Einsatzposition finden</a></li>
+<li><a class="sub" href="../anleitungen/ep-kontrolle.html">3.2 EP-Kontrolle erfassen</a></li>
+<li><a class="sub" href="../anleitungen/ep-fehler-melden.html">3.3 Einen Fehler melden</a></li>
+<li><a class="sub" href="../anleitungen/ep-chargen.html">3.4 Chargen korrigieren und als verbraucht markieren</a></li>
+<li><a class="sub" href="../anleitungen/ep-historie.html">3.5 Verlauf einer Position ansehen</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-4.html">4. Massenscan</a></li>
+<li><a class="sub" href="../anleitungen/massenscan.html">4.1 Massenscan: wann und warum</a></li>
+<li><a class="sub active" href="../anleitungen/massenscan-durchfuehren.html">4.2 Massenscan durchführen</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-5.html">5. Scannen</a></li>
+<li><a class="sub" href="../anleitungen/scan-button.html">5.1 Codes scannen</a></li>
+<li><a class="sub" href="../anleitungen/scan-probleme.html">5.2 Wenn der Scanner nicht funktioniert</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-6.html">6. Aufträge</a></li>
+<li><a class="sub" href="../anleitungen/auftraege-ansehen.html">6.1 Aufträge ansehen</a></li>
+<li><a class="sub" href="../anleitungen/auftrag-anlegen.html">6.2 Auftrag anlegen</a></li>
+<li><a class="sub" href="../anleitungen/auftrag-bearbeiten.html">6.3 Auftrag bearbeiten und abhaken</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-7.html">7. Nachschlagen</a></li>
+<li><a class="sub" href="../anleitungen/nachschlagen-produkte.html">7.1 Produkte und Bestand ansehen</a></li>
+<li><a class="sub" href="../anleitungen/nachschlagen-lager.html">7.2 Lagerbestand und Lagerorte</a></li>
+<li><a class="sub" href="../anleitungen/nachschlagen-veranstaltungen.html">7.3 Veranstaltungen ansehen</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-8.html">8. Hilfe und Begriffe</a></li>
+<li><a class="sub" href="../anleitungen/haeufige-fragen.html">8.1 Häufige Fragen</a></li>
+<li><a class="sub" href="../anleitungen/glossar.html">8.2 Begriffe einfach erklärt</a></li>
+<li><a class="sub" href="../anleitungen/rechte.html">8.3 Was du nicht selbst machen musst</a></li>
+</ul></div></nav><main class="content">
+<div class="crumbs"><a href="../index.html">Start</a> › <a href="abschnitt-4.html">4. Massenscan</a></div>
+<div class="page-intro"><span class="status-tag">Anleitung 4.2</span><h1><span class="h1-num">4.2</span>Massenscan durchführen</h1><p><b>Wann brauchst du das?</b> Du hast die Hinweise unter „Massenscan: wann und warum“ gelesen und alle Packungen des Moduls vor dir.</p></div>
+<div class="tldr"><strong class="t">Kurz gesagt</strong>Reiter Module → beim Modul auf Massenscan → Hinweis lesen → Scannen starten → alle Packungen scannen → Massenscan abschließen → Vorschau prüfen → Abschließen.</div>
+<h2 class="sec"><span class="n">✔</span>Das brauchst du vorher</h2><ul class="content-list"><li>Die Kamera ist erlaubt (siehe <a href="scan-probleme.html">Wenn der Scanner nicht funktioniert</a>).</li><li>Gute Beleuchtung und alle Packungen griffbereit.</li></ul>
+<h2 class="sec"><span class="n">→</span>So geht’s</h2>
+<ol class="steps"><li><div class="step-text">Öffne Einsatzpositionen und tippe auf den Reiter Module. Suche das Modul mit seiner Nummer und tippe auf Massenscan <span class="marker" aria-label="Markierung 1">1</span>.</div><figure class="shot"><img src="../assets/img/ms-01-modul.png" alt="Reiter Module mit einer Modulkarte und dem Button Massenscan" loading="lazy" width="585" height="1266"><figcaption><span class="marker" aria-label="Markierung 1">1</span> Massenscan. Ist er grau, ist das Modul nicht freigegeben.</figcaption></figure></li><li><div class="step-text">Gibt es noch einen unfertigen Entwurf, fragt Milan nach. Fortsetzen übernimmt den bisherigen Stand <span class="marker" aria-label="Markierung 1">1</span>, Neu beginnen verwirft ihn <span class="marker" aria-label="Markierung 2">2</span>.</div><figure class="shot"><img src="../assets/img/ms-02a-unfertig.png" alt="Dialog Unfertige Sitzung gefunden mit den Buttons Fortsetzen und Neu beginnen" loading="lazy" width="585" height="1266"><figcaption><span class="marker" aria-label="Markierung 1">1</span> Fortsetzen, <span class="marker" aria-label="Markierung 2">2</span> Neu beginnen.</figcaption></figure></li><li><div class="step-text">Lies die kurze Erklärung und tippe auf Verstanden, scannen <span class="marker" aria-label="Markierung 1">1</span>. Wenn du den Hinweis nicht mehr sehen willst, setze vorher den Haken.</div><figure class="shot"><img src="../assets/img/ms-02-hinweis.png" alt="Dialog Massenscan kurz erklärt mit fünf Hinweisen" loading="lazy" width="585" height="1266"><figcaption><span class="marker" aria-label="Markierung 1">1</span> Verstanden, scannen.</figcaption></figure></li><li><div class="step-text">Du siehst die Liste der Positionen des Moduls mit „gescannt / Soll“. Tippe auf Scannen starten <span class="marker" aria-label="Markierung 1">1</span>.</div><figure class="shot"><img src="../assets/img/ms-03-liste.png" alt="Massenscan-Liste eines Moduls mit Fortschrittsbalken und Buttons Scannen starten und Massenscan abschließen" loading="lazy" width="585" height="1266"><figcaption><span class="marker" aria-label="Markierung 1">1</span> Scannen starten, <span class="marker" aria-label="Markierung 2">2</span> Abschließen, <span class="marker" aria-label="Markierung 3">3</span> Später fortsetzen.</figcaption></figure></li><li><div class="step-text">Die Kamera bleibt an. Halte nacheinander jede Packung mit ihrem Code in den Rahmen. Milan ordnet sie der richtigen Position zu und zählt hoch.</div><figure class="shot"><img src="../assets/img/scan-01-scanner.png" alt="Scan-Fenster mit Kamerabild und Rahmen" loading="lazy" width="585" height="1266"><figcaption>Das Scan-Fenster. Im Beispiel zeigt eine Testkamera nur ein Muster, bei dir siehst du das Kamerabild.</figcaption></figure></li></ol>
+<h3>Wenn etwas nicht automatisch klappt</h3>
+<div class="table-wrap"><table class="t"><thead><tr><th>Situation</th><th>Was du tust</th></tr></thead><tbody><tr><td>Der Code enthält kein Verfallsdatum</td><td>Milan fragt bei jedem Scan nach Datum und Anzahl. Trage beides ein und tippe auf Übernehmen.</td></tr><tr><td>„Code nicht erkannt“</td><td>Wähle selbst aus der Liste, zu welcher Position die Packung gehört, oder verwirf den Scan.</td></tr><tr><td>Packung hat gar keinen Code</td><td>Tippe bei der Position auf Ohne Scan bestätigen und trage Anzahl und Datum von Hand ein.</td></tr><tr><td>„Sollbestand bereits erreicht“</td><td>Es liegen mehr Stück im Modul als vorgesehen. Milan fragt, welche Packungen im Modul bleiben und welche als Rückläufer zurück ins Lager gehen. Ordne sie zu und tippe auf Fertig.</td></tr><tr><td>Mengen müssen korrigiert werden</td><td>Mit − und + bei der jeweiligen Charge in der Liste.</td></tr></tbody></table></div>
+<h3>Abschließen</h3>
+<ol class="steps"><li><div class="step-text">Sind alle Packungen gescannt, tippe auf Massenscan abschließen <span class="marker" aria-label="Markierung 2">2</span>. Milan zeigt eine Vorschau „Vor dem Abschluss prüfen“.</div></li><li><div class="step-text">Prüfe die Vorschau. Nicht gewollte Änderungen kannst du abwählen. Tippe dann auf Abschließen. Erst jetzt ändert sich der Bestand.</div></li><li><div class="step-text">Hast du Rückläufer, fragt Milan, ob sie ins Lager eingebucht werden sollen. Wähle die Packungen aus und tippe auf Einbuchen, oder überspringe den Schritt.</div></li></ol>
+<div class="box warn"><strong class="t">Zwischendurch unterbrechen</strong><p>Mit Später fortsetzen <span class="marker" aria-label="Markierung 3">3</span> verlässt du den Massenscan. Der Entwurf bleibt erhalten, der Bestand ändert sich nicht. Mit Massenscan abbrechen verwirfst du alles.</p></div>
+<details class="faq"><summary>Ich habe versehentlich eine Packung doppelt gescannt.</summary><div class="a"><p>Korrigiere die Menge der Charge in der Liste mit −. Bemerkst du es erst in der Vorschau, wähle die Änderung ab oder gehe zurück.</p></div></details><details class="faq"><summary>Die Kamera startet nicht.</summary><div class="a"><p>Siehe <a href="scan-probleme.html">Wenn der Scanner nicht funktioniert</a>.</p></div></details><details class="faq"><summary>Ich habe etwas vergessen zu scannen und schon abgeschlossen.</summary><div class="a"><p>Melde dich beim Materialwart. Nicht gescannte Chargen wurden mit dem Abschluss entfernt und müssen neu erfasst werden.</p></div></details>
+<div class="next"><h3>Wie geht’s weiter?</h3><ul><li><a href="ep-kontrolle.html">3.2 EP-Kontrolle erfassen</a></li></ul></div>
+<div class="pager"><a href="massenscan.html">← 4.1 Massenscan: wann und warum</a><a href="scan-button.html">5.1 Codes scannen →</a></div>
+</main>
+</div>
+<footer class="site">Milan Helpdesk · Anleitungen für Helferinnen und Helfer · Stand 12.10.2026. Die Anleitungen zeigen Beispieldaten. Deine Ansicht kann je nach Einstellung leicht abweichen.</footer>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

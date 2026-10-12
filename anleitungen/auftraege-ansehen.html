@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Menü → Aufträge. Dort siehst du alle Aufgaben mit Status. Tippe eine Zeile an, um Einzelheiten zu sehen.">
+<title>6.1 Aufträge ansehen – Milan Helpdesk</title>
+<link rel="icon" type="image/png" href="../assets/img/favicon.png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../">
+<div class="top-bar">
+  <div class="brand">
+    <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="sidebar"><span></span><span></span><span></span></button>
+    <a class="logo" href="../index.html" aria-label="Zur Startseite des Milan Helpdesk"><img class="brand-mark" src="../assets/img/milan-logo.png" alt="Milan Materialmanagement"></a>
+    <div><div class="brand-text">Milan Helpdesk</div><span class="brand-sub">Anleitungen für Helferinnen und Helfer · Milan Materialmanagement</span></div>
+  </div>
+</div>
+<div class="overlay" id="overlay"></div>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="Seitennavigation">
+<div class="sidebar-search"><input id="navSearch" type="search" placeholder="Suchen, z. B. „Passwort“ oder „auffüllen“" aria-label="Anleitungen durchsuchen" autocomplete="off"></div>
+<ul class="search-results" id="searchResults" hidden></ul>
+<div id="navList"><div class="sidebar-title">Inhalt</div><ul class="nav-list">
+<li class="nav-section"><a href="../index.html">Startseite</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-1.html">1. Erste Schritte</a></li>
+<li><a class="sub" href="../anleitungen/anmelden.html">1.1 Anmelden und Abmelden</a></li>
+<li><a class="sub" href="../anleitungen/passwort-aendern.html">1.2 Passwort ändern</a></li>
+<li><a class="sub" href="../anleitungen/app-ueberblick.html">1.3 Die App im Überblick</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-2.html">2. Verbrauch dokumentieren</a></li>
+<li><a class="sub" href="../anleitungen/verbrauch-ueberblick.html">2.1 Verbrauch dokumentieren: der Überblick</a></li>
+<li><a class="sub" href="../anleitungen/veranstaltung-waehlen.html">2.2 Veranstaltung wählen</a></li>
+<li><a class="sub" href="../anleitungen/austragen.html">2.3 Material austragen</a></li>
+<li><a class="sub" href="../anleitungen/austragen-korrigieren.html">2.4 Eintrag korrigieren oder entfernen</a></li>
+<li><a class="sub" href="../anleitungen/auffuellen.html">2.5 Material auffüllen</a></li>
+<li><a class="sub" href="../anleitungen/verbrauch-bericht.html">2.6 Bericht ansehen und Sitzung beenden</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-3.html">3. Einsatzmittel kontrollieren</a></li>
+<li><a class="sub" href="../anleitungen/ep-finden.html">3.1 Einsatzposition finden</a></li>
+<li><a class="sub" href="../anleitungen/ep-kontrolle.html">3.2 EP-Kontrolle erfassen</a></li>
+<li><a class="sub" href="../anleitungen/ep-fehler-melden.html">3.3 Einen Fehler melden</a></li>
+<li><a class="sub" href="../anleitungen/ep-chargen.html">3.4 Chargen korrigieren und als verbraucht markieren</a></li>
+<li><a class="sub" href="../anleitungen/ep-historie.html">3.5 Verlauf einer Position ansehen</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-4.html">4. Massenscan</a></li>
+<li><a class="sub" href="../anleitungen/massenscan.html">4.1 Massenscan: wann und warum</a></li>
+<li><a class="sub" href="../anleitungen/massenscan-durchfuehren.html">4.2 Massenscan durchführen</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-5.html">5. Scannen</a></li>
+<li><a class="sub" href="../anleitungen/scan-button.html">5.1 Codes scannen</a></li>
+<li><a class="sub" href="../anleitungen/scan-probleme.html">5.2 Wenn der Scanner nicht funktioniert</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-6.html">6. Aufträge</a></li>
+<li><a class="sub active" href="../anleitungen/auftraege-ansehen.html">6.1 Aufträge ansehen</a></li>
+<li><a class="sub" href="../anleitungen/auftrag-anlegen.html">6.2 Auftrag anlegen</a></li>
+<li><a class="sub" href="../anleitungen/auftrag-bearbeiten.html">6.3 Auftrag bearbeiten und abhaken</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-7.html">7. Nachschlagen</a></li>
+<li><a class="sub" href="../anleitungen/nachschlagen-produkte.html">7.1 Produkte und Bestand ansehen</a></li>
+<li><a class="sub" href="../anleitungen/nachschlagen-lager.html">7.2 Lagerbestand und Lagerorte</a></li>
+<li><a class="sub" href="../anleitungen/nachschlagen-veranstaltungen.html">7.3 Veranstaltungen ansehen</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-8.html">8. Hilfe und Begriffe</a></li>
+<li><a class="sub" href="../anleitungen/haeufige-fragen.html">8.1 Häufige Fragen</a></li>
+<li><a class="sub" href="../anleitungen/glossar.html">8.2 Begriffe einfach erklärt</a></li>
+<li><a class="sub" href="../anleitungen/rechte.html">8.3 Was du nicht selbst machen musst</a></li>
+</ul></div></nav><main class="content">
+<div class="crumbs"><a href="../index.html">Start</a> › <a href="abschnitt-6.html">6. Aufträge</a></div>
+<div class="page-intro"><span class="status-tag">Anleitung 6.1</span><h1><span class="h1-num">6.1</span>Aufträge ansehen</h1><p><b>Wann brauchst du das?</b> Du willst wissen, was noch zu tun ist, oder eine Meldung nachverfolgen.</p></div>
+<div class="tldr"><strong class="t">Kurz gesagt</strong>Menü → Aufträge. Dort siehst du alle Aufgaben mit Status. Tippe eine Zeile an, um Einzelheiten zu sehen.</div>
+<p>Ein Auftrag ist eine Aufgabe, zum Beispiel „Rettungsdecken nachbestellen“ oder „Sauerstoffflasche prüfen“. Aufträge entstehen von Hand oder automatisch, etwa wenn eine EP-Kontrolle einen Fehler meldet.</p>
+<ol class="steps"><li><div class="step-text">Öffne im Menü, Gruppe Organisation, den Eintrag Aufträge.</div><figure class="shot"><img src="../assets/img/menue-organisation.png" alt="Menü mit dem Eintrag Aufträge" loading="lazy" width="585" height="1266"><figcaption>Aufträge (<span class="marker" aria-label="Markierung 1">1</span>).</figcaption></figure></li><li><div class="step-text">Oben filterst du nach Status (Alle Status, Offen, In Bearbeitung, Erledigt, Abgebrochen). „Erledigte ausblenden“ hält die Liste übersichtlich. Tippe auf einen Auftrag, um ihn zu öffnen.</div><figure class="shot"><img src="../assets/img/au-03-liste.png" alt="Auftragsliste mit Statusfilter, Button Neuer Auftrag und einem Auftrag" loading="lazy" width="585" height="1266"><figcaption>Die Liste. Jeder Auftrag zeigt Text, Art, Status, Bearbeiter und Verlinkung.</figcaption></figure></li></ol>
+<div class="table-wrap"><table class="t"><thead><tr><th>Status</th><th>Bedeutung</th></tr></thead><tbody><tr><td>Offen</td><td>Noch niemand hat angefangen.</td></tr><tr><td>In Bearbeitung</td><td>Jemand kümmert sich darum.</td></tr><tr><td>Erledigt</td><td>Fertig.</td></tr><tr><td>Abgebrochen</td><td>Wird nicht mehr gebraucht.</td></tr></tbody></table></div>
+<div class="next"><h3>Wie geht’s weiter?</h3><ul><li><a href="auftrag-anlegen.html">6.2 Auftrag anlegen</a></li><li><a href="auftrag-bearbeiten.html">6.3 Auftrag bearbeiten und abhaken</a></li></ul></div>
+<div class="pager"><a href="scan-probleme.html">← 5.2 Wenn der Scanner nicht funktioniert</a><a href="auftrag-anlegen.html">6.2 Auftrag anlegen →</a></div>
+</main>
+</div>
+<footer class="site">Milan Helpdesk · Anleitungen für Helferinnen und Helfer · Stand 12.10.2026. Die Anleitungen zeigen Beispieldaten. Deine Ansicht kann je nach Einstellung leicht abweichen.</footer>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

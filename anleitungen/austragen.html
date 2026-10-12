@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Im Reiter Austragen das Produkt suchen, Menge einstellen, Austragen tippen, Objekt und Position bestätigen. Fertig.">
+<title>2.3 Material austragen – Milan Helpdesk</title>
+<link rel="icon" type="image/png" href="../assets/img/favicon.png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../">
+<div class="top-bar">
+  <div class="brand">
+    <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="sidebar"><span></span><span></span><span></span></button>
+    <a class="logo" href="../index.html" aria-label="Zur Startseite des Milan Helpdesk"><img class="brand-mark" src="../assets/img/milan-logo.png" alt="Milan Materialmanagement"></a>
+    <div><div class="brand-text">Milan Helpdesk</div><span class="brand-sub">Anleitungen für Helferinnen und Helfer · Milan Materialmanagement</span></div>
+  </div>
+</div>
+<div class="overlay" id="overlay"></div>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="Seitennavigation">
+<div class="sidebar-search"><input id="navSearch" type="search" placeholder="Suchen, z. B. „Passwort“ oder „auffüllen“" aria-label="Anleitungen durchsuchen" autocomplete="off"></div>
+<ul class="search-results" id="searchResults" hidden></ul>
+<div id="navList"><div class="sidebar-title">Inhalt</div><ul class="nav-list">
+<li class="nav-section"><a href="../index.html">Startseite</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-1.html">1. Erste Schritte</a></li>
+<li><a class="sub" href="../anleitungen/anmelden.html">1.1 Anmelden und Abmelden</a></li>
+<li><a class="sub" href="../anleitungen/passwort-aendern.html">1.2 Passwort ändern</a></li>
+<li><a class="sub" href="../anleitungen/app-ueberblick.html">1.3 Die App im Überblick</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-2.html">2. Verbrauch dokumentieren</a></li>
+<li><a class="sub" href="../anleitungen/verbrauch-ueberblick.html">2.1 Verbrauch dokumentieren: der Überblick</a></li>
+<li><a class="sub" href="../anleitungen/veranstaltung-waehlen.html">2.2 Veranstaltung wählen</a></li>
+<li><a class="sub active" href="../anleitungen/austragen.html">2.3 Material austragen</a></li>
+<li><a class="sub" href="../anleitungen/austragen-korrigieren.html">2.4 Eintrag korrigieren oder entfernen</a></li>
+<li><a class="sub" href="../anleitungen/auffuellen.html">2.5 Material auffüllen</a></li>
+<li><a class="sub" href="../anleitungen/verbrauch-bericht.html">2.6 Bericht ansehen und Sitzung beenden</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-3.html">3. Einsatzmittel kontrollieren</a></li>
+<li><a class="sub" href="../anleitungen/ep-finden.html">3.1 Einsatzposition finden</a></li>
+<li><a class="sub" href="../anleitungen/ep-kontrolle.html">3.2 EP-Kontrolle erfassen</a></li>
+<li><a class="sub" href="../anleitungen/ep-fehler-melden.html">3.3 Einen Fehler melden</a></li>
+<li><a class="sub" href="../anleitungen/ep-chargen.html">3.4 Chargen korrigieren und als verbraucht markieren</a></li>
+<li><a class="sub" href="../anleitungen/ep-historie.html">3.5 Verlauf einer Position ansehen</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-4.html">4. Massenscan</a></li>
+<li><a class="sub" href="../anleitungen/massenscan.html">4.1 Massenscan: wann und warum</a></li>
+<li><a class="sub" href="../anleitungen/massenscan-durchfuehren.html">4.2 Massenscan durchführen</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-5.html">5. Scannen</a></li>
+<li><a class="sub" href="../anleitungen/scan-button.html">5.1 Codes scannen</a></li>
+<li><a class="sub" href="../anleitungen/scan-probleme.html">5.2 Wenn der Scanner nicht funktioniert</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-6.html">6. Aufträge</a></li>
+<li><a class="sub" href="../anleitungen/auftraege-ansehen.html">6.1 Aufträge ansehen</a></li>
+<li><a class="sub" href="../anleitungen/auftrag-anlegen.html">6.2 Auftrag anlegen</a></li>
+<li><a class="sub" href="../anleitungen/auftrag-bearbeiten.html">6.3 Auftrag bearbeiten und abhaken</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-7.html">7. Nachschlagen</a></li>
+<li><a class="sub" href="../anleitungen/nachschlagen-produkte.html">7.1 Produkte und Bestand ansehen</a></li>
+<li><a class="sub" href="../anleitungen/nachschlagen-lager.html">7.2 Lagerbestand und Lagerorte</a></li>
+<li><a class="sub" href="../anleitungen/nachschlagen-veranstaltungen.html">7.3 Veranstaltungen ansehen</a></li>
+<li class="nav-section"><a href="../anleitungen/abschnitt-8.html">8. Hilfe und Begriffe</a></li>
+<li><a class="sub" href="../anleitungen/haeufige-fragen.html">8.1 Häufige Fragen</a></li>
+<li><a class="sub" href="../anleitungen/glossar.html">8.2 Begriffe einfach erklärt</a></li>
+<li><a class="sub" href="../anleitungen/rechte.html">8.3 Was du nicht selbst machen musst</a></li>
+</ul></div></nav><main class="content">
+<div class="crumbs"><a href="../index.html">Start</a> › <a href="abschnitt-2.html">2. Verbrauch dokumentieren</a></div>
+<div class="page-intro"><span class="status-tag">Anleitung 2.3</span><h1><span class="h1-num">2.3</span>Material austragen</h1><p><b>Wann brauchst du das?</b> Du hast bei einer Veranstaltung Material aus einem Fahrzeug, Rucksack oder Koffer verbraucht.</p></div>
+<div class="tldr"><strong class="t">Kurz gesagt</strong>Im Reiter Austragen das Produkt suchen, Menge einstellen, Austragen tippen, Objekt und Position bestätigen. Fertig.</div>
+<h2 class="sec"><span class="n">✔</span>Das brauchst du vorher</h2><ul class="content-list"><li>Du hast die Veranstaltung gewählt (siehe <a href="veranstaltung-waehlen.html">Veranstaltung wählen</a>).</li><li>Du weißt, was verbraucht wurde, wie viel und aus welchem Fahrzeug oder Rucksack (das „Objekt“).</li></ul>
+<h3>Weg A: Über Produkte (der schnellste Weg)</h3>
+<ol class="steps"><li><div class="step-text">Bleibe im Reiter Austragen und wähle Über Produkte. Suche das Produkt, entweder mit dem Suchfeld oder durch Blättern. Zuletzt ausgetragene Produkte stehen oben unter „Zuletzt in dieser Sitzung ausgetragen“. Dort kannst du mit Nochmal austragen schnell wiederholen.</div></li><li><div class="step-text">Stelle bei dem Produkt die Menge ein. Mit + und − <span class="marker" aria-label="Markierung 1">1</span> zählst du hoch und runter, du kannst die Zahl auch direkt eintippen. Tippe dann auf Austragen <span class="marker" aria-label="Markierung 2">2</span>.</div><figure class="shot"><img src="../assets/img/vp-03-menge.png" alt="Produktkarte Verbandpäckchen groß mit Mengenfeld und Button Austragen" loading="lazy" width="585" height="1266"><figcaption><span class="marker" aria-label="Markierung 1">1</span> Menge, <span class="marker" aria-label="Markierung 2">2</span> Austragen.</figcaption></figure></li><li><div class="step-text">Es öffnet sich ein Dialog mit drei Schritten. Schritt 1: Tippe das Objekt an, aus dem das Material kam <span class="marker" aria-label="Markierung 1">1</span>. Das ist dein Fahrzeug, Rucksack oder Koffer.</div><figure class="shot"><img src="../assets/img/vp-04-dialog-objekt.png" alt="Dialog Austragen, Schritt 1 Objekt wählen" loading="lazy" width="585" height="1266"><figcaption>Schritt 1: <span class="marker" aria-label="Markierung 1">1</span> Objekt wählen.</figcaption></figure></li><li><div class="step-text">Schritt 2: Milan zeigt die passende Einsatzposition. Bei nur einer Möglichkeit steht „bitte bestätigen“. Tippe sie an <span class="marker" aria-label="Markierung 2">2</span>. Schritt 3: Prüfe die Menge <span class="marker" aria-label="Markierung 3">3</span> und tippe auf Austragen <span class="marker" aria-label="Markierung 4">4</span>.</div><figure class="shot"><img src="../assets/img/vp-05-dialog-ep.png" alt="Dialog Austragen mit gewählter Einsatzposition, Menge und Button Austragen" loading="lazy" width="585" height="1266"><figcaption><span class="marker" aria-label="Markierung 2">2</span> Position, <span class="marker" aria-label="Markierung 3">3</span> Menge, <span class="marker" aria-label="Markierung 4">4</span> Austragen.</figcaption></figure></li><li><div class="step-text">Unten erscheint kurz „Ausgetragen.“. Der Eintrag ist gespeichert. Er taucht jetzt im Reiter Offene Auffüllungen auf.</div><figure class="shot"><img src="../assets/img/vp-06-ausgetragen.png" alt="Bestätigung Ausgetragen am unteren Bildrand" loading="lazy" width="585" height="1266"><figcaption>Die Bestätigung verschwindet nach wenigen Sekunden von selbst.</figcaption></figure></li></ol>
+<h3>Weg B: Über Einsatzpositionen</h3>
+<p>Dieser Weg passt, wenn du genau weißt, aus welchem Fahrzeug oder Rucksack das Material kam. Du wählst zuerst den Ort, dann das Produkt.</p>
+<ol class="steps"><li><div class="step-text">Tippe auf Über Einsatzpositionen <span class="marker" aria-label="Markierung 1">1</span>. Die Liste ist nach Objekten sortiert <span class="marker" aria-label="Markierung 2">2</span>. Mit dem Suchfeld findest du eine Position auch über Produktnamen oder Pfad.</div><figure class="shot"><img src="../assets/img/vp-07-ueber-ep.png" alt="Liste der Einsatzpositionen nach Objekt gruppiert mit Button Verbrauch erfassen" loading="lazy" width="585" height="1266"><figcaption><span class="marker" aria-label="Markierung 1">1</span> Weg wählen, <span class="marker" aria-label="Markierung 2">2</span> Gruppe nach Objekt.</figcaption></figure></li><li><div class="step-text">Tippe bei der richtigen Position auf Verbrauch erfassen. Weil Ort und Produkt schon feststehen, musst du nur noch die Menge <span class="marker" aria-label="Markierung 1">1</span> prüfen und auf Austragen <span class="marker" aria-label="Markierung 2">2</span> tippen.</div><figure class="shot"><img src="../assets/img/vp-07b-ep-dialog.png" alt="Dialog mit Menge und Button Austragen für eine bereits gewählte Position" loading="lazy" width="585" height="1266"><figcaption><span class="marker" aria-label="Markierung 1">1</span> Menge, <span class="marker" aria-label="Markierung 2">2</span> Austragen.</figcaption></figure></li></ol>
+<h3>Weg C: Per Scan</h3>
+<p>Tippe auf Position/Modul scannen und halte die Kamera auf das Etikett des Moduls oder der Position. Milan wählt dann den richtigen Eintrag. Wie das Scannen funktioniert, steht unter <a href="scan-button.html">Scannen</a>.</p>
+<div class="box warn"><strong class="t">Wenn du den Ort nicht kennst</strong><p>In der Objektliste gibt es den Eintrag „999 – Unbekannt / Platzhalter“. Wähle ihn nur, wenn du wirklich nicht weißt, woher das Material stammt. Sage danach dem Materialwart Bescheid, damit er es zuordnen kann.</p></div>
+<details class="faq"><summary>Ich habe die falsche Menge eingetragen.</summary><div class="a"><p>Das lässt sich korrigieren, solange noch nicht aufgefüllt wurde. Siehe <a href="austragen-korrigieren.html">Eintrag korrigieren oder entfernen</a>.</p></div></details><details class="faq"><summary>Das Produkt finde ich nicht.</summary><div class="a"><p>Probiere einen kürzeren Suchbegriff oder die Kategorie. Findest du es trotzdem nicht, ist es nicht in Milan angelegt. Melde das dem Materialwart.</p></div></details><details class="faq"><summary>Muss ich dazu im Fahrzeug sein?</summary><div class="a"><p>Nein. Du kannst das von überall tun, wo du Milan öffnen kannst.</p></div></details>
+<div class="next"><h3>Wie geht’s weiter?</h3><ul><li><a href="austragen-korrigieren.html">2.4 Eintrag korrigieren oder entfernen</a></li><li><a href="auffuellen.html">2.5 Material auffüllen</a></li></ul></div>
+<div class="pager"><a href="veranstaltung-waehlen.html">← 2.2 Veranstaltung wählen</a><a href="austragen-korrigieren.html">2.4 Eintrag korrigieren oder entfernen →</a></div>
+</main>
+</div>
+<footer class="site">Milan Helpdesk · Anleitungen für Helferinnen und Helfer · Stand 12.10.2026. Die Anleitungen zeigen Beispieldaten. Deine Ansicht kann je nach Einstellung leicht abweichen.</footer>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>
